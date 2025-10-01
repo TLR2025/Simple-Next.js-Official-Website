@@ -43,7 +43,7 @@ export default async function MenuGrid(){
         <div className="h-full w-full">
             <div className={cn(
                 "hidden md:grid",
-                "w-full h-[640px]",
+                "w-full h-[70vh]",
                 // "md:gap-6"
             )} style={{gridTemplateRows: `repeat(${gridSize.height}, 1fr)`,gridTemplateColumns: `repeat(${gridSize.width}, 1fr)`}}>
                 {cards.map((item, index)=>{

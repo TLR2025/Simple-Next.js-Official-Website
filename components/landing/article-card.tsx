@@ -26,9 +26,10 @@ export default function ArticleCard({ article, className }: Props){
                     <Image
                         width={5596}
                         height={3731}
-                        src={article.img}
-                        placeholder="empty"
-                        alt="image"
+                        src={article.img.url}
+                        placeholder="blur"
+                        blurDataURL={article.img.blurDataURL}
+                        alt={article.img.alt}
                         className={cn(
                             "object-cover object-center",
                             "w-full h-full",
@@ -55,7 +56,7 @@ export default function ArticleCard({ article, className }: Props){
                 "text-[16px] text-gray-500 text-center md:text-left",
             )}>
                 <p>
-                    {article.introduction}
+                    {article.description}
                 </p>
             </div>
 
