@@ -9,6 +9,7 @@ First, create and edit ```.env``` file. You can see an example in the ```.env.ex
 Then, run the development server:
 
 ```bash
+npm i
 npm run dev
 ```
 
